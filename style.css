@@ -1,0 +1,470 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Tangerine&family=Roboto&family=Orbitron&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing :border-box;
+    text-decoration:none;
+    font-family:poppins,sans-serif;
+    
+}
+body{
+    background:#0f0f0f ;
+    color:white;
+    
+    
+}
+.img{
+    background-color:#00ffc3;
+    width:30px;
+    height:30px;
+}
+.top{
+    font-size:20px;
+    color:white;
+    background :#00ffc3;
+    position :fixed;
+    bottom :30px;
+    right:30px;
+    padding:10px 20px;
+    border-radius:6px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+    border:2px solid white;
+}
+/* nav{
+    background: #1a1a1a;
+    color :#00ffc3;
+    display :flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    box-shadow: 0 2px 10px rgba(0, 255, 195, 0.2); 
+}
+
+
+.container .bx{
+    display :none;
+    
+}
+ ul{
+    display :flex;
+    font-size:25px;
+    list-style:none;
+    align-items:center;
+    over-flow:hidden;
+    gap:30px;
+    
+    
+    
+}
+ ul li a{
+    
+    color:#fff;
+    font-family:'Roboto';
+    background:;
+    text-shadow:5px 5px 80px cyan;
+    
+}
+ */
+.logo{
+    font-size:25px;
+    color:#00ffc3;
+    font-family:'Orbitron', 'Poppins', 'Roboto';
+    transition: all 0.9s ease; 
+    text-shadow: 0 0 5px #00ffc3, 0 0 10px #00ffc3;
+}
+.logo:hover{
+    text-shadow:0 0 8px white, 0 0 13px white;
+    color:white;
+    scale:1.1;
+    
+}
+.container ul li a:hover{
+    
+    color:#00ffc3;
+   
+}
+hr{
+    background: black;
+    border:1px solid black;
+}
+.k{
+    padding: 20px 60px;
+    color:white;
+    text-align:center;
+     background :/* linear-gradient(#0f1e1e4a,#1d1d1d4a), */url("sectigon.jpeg")  ;
+     font-weight:500;
+     font-size:25px;
+     background-position:center;
+     background-repeat:no-repeat;
+     background-size:cover;
+    /* transform:rotate(180deg); */
+    transition : 0.5s;
+    font-family: 'Poppins', 'Roboto';
+    text-shadow: 0 0 5px #00ffc3, 0 0 10px #00ffc3;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2); 
+    
+    
+}
+.k:hover{
+    text-shadow:0 0 8px white, 0 0 13px white;
+    transition : 0.3s;
+}
+
+.mark{
+    padding:10px 0;
+    background: ; 
+    color :white;
+    text-shadow: 0 0 5px #00ffc3, 0 0 10px #00ffc3;
+    
+}
+.game_list{
+
+    display :flex;
+    overflow:auto;
+    white-space:nowrap;
+    width:100vw;
+    border-radius:8px;
+    
+}
+.game img{
+    width:100vw;
+    height:40vh;
+    
+    box-shadow: 10px 0 10px 0 rgba(255, 255, 255, 0.2); 
+  
+    
+}
+.new{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    
+    
+}
+.gam{
+    text-transform: capitalize ;
+    margin: 40px 30px;
+    border:2px solid #00ffc3;
+    padding-bottom:20px;
+    border-radius:8px;
+    box-shadow: 0 0 10px #00ffc3;
+    transition :0.4s;
+    text-align:center;
+    
+}
+.gam:hover{
+    scale:1.17;
+}
+.gam img{
+    width: 300px;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+}
+.gam .star{
+    margin-top:20px;
+}
+.gam h3, .gam p {
+    margin-top:10px;
+    font-weight:600;
+    
+}
+.learn{
+    Background: #222;
+     Color: #fff;
+     padding:10px 20px;
+      Border: 1px solid #00ffc3;
+      border-radius:8px;
+      margin-top:20px;
+}
+.learn:hover{
+    Background: #00ffc3; 
+    Color: #000; 
+    Cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00ffc3;
+}
+.menu .bar{
+   width:30px ;
+   height: 5px;
+   background: #00ffc3;
+   border:1px solid #00ffc3;
+   margin-bottom:5px;   
+   z-index:5;
+   
+   
+}
+.menu{
+    
+    padding :5px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    display :none;
+    
+}
+
+.action{
+    
+text-transform: capitalize ;
+    
+    border:2px solid #00ffc3;
+    border-radius:8px;
+    box-shadow: 0 0 10px #00ffc3;
+    transition :0.4s;
+    text-align:center;
+    margin:5px 7px;
+    }
+   .action img{
+        width: 200px;
+    height:100px;
+    border-radius:8px;
+   }
+   .action:hover{
+       scale:1.1;
+   }
+   .category {
+       display:flex;
+       justify-content:center;
+       flex-direction:column;
+   }
+   .category h2{
+       margin:15px 10px;
+       text-shadow: 0 0 5px #00ffc3, 0 0 10px #00ffc3;
+   }
+    h3{
+        margin:5px 10px;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+    }
+    .more{
+        margin:10px 20px;
+        font-size:20px;
+        font-weight:800;
+        padding:10px 80px;
+        
+        
+    }
+    footer{
+        background: #00ffc3;
+        padding :0px 0px;
+        position :static;
+        bottom :0;
+        
+        
+    }
+    .legal , .social_media{
+        display:flex;
+        gap:30px;
+        align-items:center;
+        justify-content:center;
+    }
+    
+    .legal a , .social_media a{
+        color:#1a1a1a;
+        font-size:20px;
+        font-weight:500;
+        padding:20px 5px;
+    }
+    .copy{
+        background: #1a1a1a;
+        text-align:center;
+    }
+@media (max-width:600px){
+   /* /*  
+
+.container{
+    position : absolute ;
+    top:80px;
+    background :#00ffc3;
+    width: 100%;
+    display:none;
+    left:0;
+    z-index:8;
+    overflow:  ;
+    
+}
+
+.container ul{
+    flex-direction:column;
+    overflow:hidden;
+    font-weight:600;
+    margin-top:px;
+    gap:20px;
+    padding:5px 0;
+    
+}
+ul li{
+    
+}
+
+.container ul li a{
+    background:black;
+    text-shadow:5px 5px 80px cyan;
+    text-align:center;
+    width:100vw;
+    padding:15px 100vw;
+    
+    
+}
+.menu{
+    display:flex;
+}
+.menu:hover{
+    background: white;
+}
+.container ul li a:hover{
+    
+    color:black;
+    background:#00ffc3;
+   
+}
+.container .bx{
+    font-size:50px;
+    font-weight:600;
+    border:1px solid white;
+    position:absolute;
+    right:4px;
+    top:5px;
+Background: #000; 
+    Color: #00ffc3; 
+    }
+.container .bx:hover{
+       Background: #00ffc3; 
+    Color: #fff; 
+    Cursor: pointer;
+    border-radius: px;
+    box-shadow: 0 0 10px #00ffc3;
+}
+ */ */
+}
+    *{
+            margin:0;
+            padding:0;
+        }
+       nav {
+      
+           background :#1a1a1a;
+           color:white;
+           display:flex;
+           height:70px;
+           padding:10px 30px;
+           align-items:center;
+           justify-content:space-between;
+           position:relative;
+           transition:0.5s;
+           
+        }
+        .logo{
+            font-size:40px;
+        }
+        .bx{
+            color :white;
+        }
+  
+        nav ul{
+            display:flex;
+            gap:20px;
+            font-size:20px;
+            
+        }
+        nav ul li{
+            list-style:none;
+        }
+        nav ul li a{
+            text-decoration:none;
+            color:#fff;
+        }
+        
+              
+.menu .bar{
+   width:20px ;
+   height: 2px;
+   background: #00ffc3;
+   border:1px solid #00ffc3;
+   margin-bottom:2px;   
+   z-index:5;
+   transition:0.4s;
+   
+}
+.menu{
+    
+    padding :5px;
+    font-size:30px;
+    display :none;
+    
+}
+
+        
+        
+        
+        
+        
+        
+        
+        @media (max-width:800px){
+            nav ul{
+                position :absolute ;
+                flex-direction:column;
+                text-align:center;
+                top:70px;
+                left:0;
+                right:0;
+                background :#1a1a1a;
+                gap:0;
+                overflow : hidden;
+                transition:0.8s;
+                z-index:3;
+                box-shadow: 0 2px 10px rgba(0, 255, 195, 0.2);
+            }
+            nav ul li{
+                padding:10px;
+            }
+            .menu{
+                display:block;
+            }
+            .logo{
+                font-size:20px;
+            }
+            nav ul li:hover{
+                background: #00ffc3;
+                
+            }
+            .top  {
+                padding:5px 10px;
+            }
+.top img{
+    width:30px ;
+    height: 30px;
+}
+
+   .legal , .social_media{
+        display:flex;
+        gap:0;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        
+    }
+     .legal a , .social_media a{
+        color:#1a1a1a;
+        font-size:20px;
+        font-weight:500;
+        padding:10px 2px;
+    }
+    .game img{
+    width:100vw;
+    height:20vh;
+    
+    box-shadow: 10px 0 10px 0 rgba(255, 255, 255, 0.2); 
+  
+    
+}
+        }
+        
+        
+  
+        

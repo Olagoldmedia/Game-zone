@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"id="top">
+            <h2>Gamezone</h2>
+        </div>
+        
+                <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="download.html">Download</a></li>
+                <!-- <li><a href="#">Ratings</a></li> -->
+                <li><a href="update.html">Update</a></li>
+                <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="menu" id="" onclick"showMenu()">
+            <!-- <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span> -->
+           
+            <img src="images/menu.png" class="img"alt="" onclick="showMenu()">
+            </div>
+    </nav>
+    
+    <section>
+    <div class="contact">
+        
+    
+    <div class="category">
+         <h2>Get in Touch</h2>
+    </div>
+   
+
+
+
+
+
+<form>
+    
+    <p>Got a question, suggestion, or just want to say hi? Reach out to us!</p>
+    
+    <!-- <label class="name"> Name</label><br> -->
+    <input type="text" placeholder="Name">
+    <!-- <label class="name"> Email</label><br> -->
+    <input type="email" Placeholder="Email">
+    
+    
+    <textarea value="Message"    >
+        
+    </textarea>
+</form>
+
+<p>You can also email us at support@<a href="mailto:gamezone@gmail.com"> gamezone@gmail.com</a>
+Or follow us on social media:
+📘 Facebook | 🐦 Twitter | 🎮 Discord
+
+ </p>
+    </div>
+    
+ </section>  
+    
+    
+    
+    
+    
+    
+     <footer>
+        <div class="legal">
+            <a href="#" class="info">Legal </a> 
+            <a href="contact.html"  class="info">Contact</a> 
+            <a href="#"  class="info">Community</a> 
+            <a href="#"  class="info">Term and Condition</a> 
+            <a href="about.html"  class="info">About us</a> 
+        </div>
+        <hr/>
+        <div class="social_media">
+            <a href="#" class="info">Facebook</a> 
+            <a href="#" class="info">Twitter</a> 
+            <a href="#" class="info">Instagram</a> 
+            <a href="#" class="info">Youtube</a> 
+            <a href="#" class="info">Tiktok</a>
+        </div>
+        <div class="copy">
+           &copy copyright <a href=""> GameZone</a> well reserved 
+        </div>
+    </footer>
+    
+    <script >
+        let menu=document.getElementById("menu");
+        menu.style.maxHeight = "0px";
+        
+        function showMenu(){
+            if(menu.style.maxHeight == "0px"){
+                menu.style.maxHeight = "300px";
+            }else{                
+                menu.style.maxHeight = "0px";;
+           } 
+                }
+        
+    </script>
+    
+    <style>
+        section{
+            width: 100vw;
+            height:100vh;
+            display:flex;
+            flex-directiin:column;
+            align-items:center;
+            justify-content:center;
+        }
+        .contact{
+            padding : 10px 20px;
+        }
+        .contact p{
+            text-align:center;
+            font-size:15px;
+            margin:10px 2px;
+        }
+        form{
+            border:2px solid #00ffc3;
+            padding :15px 5px;
+            text-align:center;
+        }
+        form .name{
+            margin:5px 10px;
+            text-align:left;
+        }
+        form input, textarea{
+            width:80%;
+            margin:20px 5px;
+            padding:5px 10px;
+            color:white;
+            background:#00ffc3;
+            border:1px solid white;
+            height: 50px;
+            border-radius:5px;
+        }
+        textarea{
+            height: 70px;
+            width:80%;
+            
+           
+        }
+        .contact a{
+            color :#00ffc3;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    
+    <nav>
+        <div class="logo"id="top">
+            <h2>Gamezone</h2>
+        </div>
+        
+                <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="download.html">Download</a></li>
+                <!-- <li><a href="#">Ratings</a></li> -->
+                <li><a href="update.html">Update</a></li>
+                <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="menu" id="" onclick"showMenu()">
+            <!-- <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span> -->
+           
+            <img src="images/menu.png" class="img"alt="" onclick="showMenu()">
+            </div>
+    </nav>
+    
+    
+    
+    
+    
+    
+        <section class="center">
+    
+    <div class="about">
+        <h2>About GameZone</h2>
+        <p>
+            GameZone was founded by a team of passionate gamers who believe that gaming is more than just a hobby – it’s a lifestyle.
+            </p>
+            <h2>Our Mission</h2>
+            <p> Our mission is to bring the gaming community together by providing quality game content, accurate reviews, and easy access to game downloads.
+
+With a blend of professionalism and raw gamer passion, we aim to be your daily go-to site for gaming news, updates, reviews, and downloads.
+
+Whether you’re a console warrior, a PC strategist, or a mobile legend – welcome to your new gaming home.
+
+
+        </p>
+    </div>
+    
+    </section>
+    
+         <!-- <a href="nav.html"><button class="top" id="#menu"> 
+        back
+    </button></a> -->
+    <footer>
+        <div class="legal">
+            <a href="#" class="info">Legal </a> 
+            <a href="contact.html"  class="info">Contact</a> 
+            <a href="#"  class="info">Community</a> 
+            <a href="#"  class="info">Term and Condition</a> 
+            <a href="about.html"  class="info">About us</a> 
+        </div>
+        <hr/>
+        <div class="social_media">
+            <a href="#" class="info">Facebook</a> 
+            <a href="#" class="info">Twitter</a> 
+            <a href="#" class="info">Instagram</a> 
+            <a href="#" class="info">Youtube</a> 
+            <a href="#" class="info">Tiktok</a>
+        </div>
+        <div class="copy">
+           &copy copyright <a href=""> GameZone</a> well reserved 
+        </div>
+    </footer>
+    
+    <script >
+        let menu=document.getElementById("menu");
+        menu.style.maxHeight = "0px";
+        
+        function showMenu(){
+            if(menu.style.maxHeight == "0px"){
+                menu.style.maxHeight = "300px";
+            }else{                
+                menu.style.maxHeight = "0px";;
+           } 
+                }
+        
+    </script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            display:flex;
+              flex-direction:column;
+              justify-content:center;
+              align-items:center;
+              width:100vw;
+              height: 100vh;
+              margin-left:0;
+              
+        }
+      
+      .about{
+          background:#00ffc3;
+          padding:20px 0px;
+          margin-top:30px;
+      }
+      
+      footer{
+          margin-top:60px;
+      }
+          .about h2{
+              background:#1a1a1a;
+              padding: 20px 30px;
+    color:white;
+    text-align:center;
+     font-weight:500;
+     
+     font-size:25px;
+    transition : 0.5s;
+    border:1px solid white;
+    text-transform: capitalize ;
+    font-family: 'Poppins', 'Roboto';
+    text-shadow: 0 0 5px #00ffc3, 0 0 10px #00ffc3;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2); 
+    
+    
+          }
+          
+          .about:hover{
+    text-shadow:0 0 8px white, 0 0 13px white;
+    transition : 0.3s;
+}
+        .about p{
+              background:#00ffc3;
+              padding:15px 40px;
+    color:white;
+    text-align:justify;
+     font-weight:;
+     font-size:25px;
+    transition : 0.5s;
+    font-family: 'Poppins', 'Roboto';
+    text-shadow: 0 0 5px #00ffc3, 0 0 10px #00ffc3;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2); 
+    
+    
+        }
+         
+        @media (max-width:600px){
+            nav ul{
+                position :absolute ;
+                flex-direction:column;
+                text-align:center;
+                top:70px;
+                left:0;
+                right:0;
+                background :#1a1a1a;
+                gap:0;
+                overflow : hidden;
+                transition:0.8s;
+                z-index:3;
+                box-shadow: 0 2px 10px rgba(0, 255, 195, 0.2);
+            }
+            nav ul li{
+                padding:10px;
+            }
+            .menu{
+                display:block;
+            }
+            .logo{
+                font-size:20px;
+            }
+            nav ul li:hover{
+                background: #00ffc3;
+                
+            }
+            .top  {
+                padding:5px 10px;
+            }
+            footer{
+                margin-top:80px;
+            }
+.top img{
+    width:30px ;
+    height: 30px;
+}
+
+   .legal , .social_media{
+        display:flex;
+        gap:0;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        
+    }
+     .legal a , .social_media a{
+        color:#1a1a1a;
+        font-size:20px;
+        font-weight:500;
+        padding:10px 2px;
+    }
+    
+        }
+        
+        
+    </style>
+</body>
+</html>

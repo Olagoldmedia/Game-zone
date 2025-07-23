@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    
+    <nav>
+        <div class="logo"id="top">
+            <h2>Gamezone</h2>
+        </div>
+        
+                <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="download.html">Download</a></li>
+                <!-- <li><a href="#">Ratings</a></li> -->
+                <li><a href="update.html">Update</a></li>
+                <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="menu" id="" onclick"showMenu()">
+            <!-- <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span> -->
+           
+            <img src="images/menu.png" class="img"alt="" onclick="showMenu()">
+            </div>
+    </nav>
+    
+    
+    <div class="container">
+        <form>
+            <h2>Login Form</h2>
+            <div class="input">
+                <label>Username</label>
+                <input type="text" name="" id="user">
+            </div>
+            <div class="input">
+                <label>Password</label>
+                <input type="text" name="" id="pass">
+            </div>
+            <input type="submit" class="btn" value="Login">
+        </form>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+         <!-- <a href="nav.html"><button class="top" id="#menu"> 
+        back
+    </button></a> -->
+    <footer>
+        <div class="legal">
+            <a href="#" class="info">Legal </a> 
+            <a href="contact.html"  class="info">Contact</a> 
+            <a href="#"  class="info">Community</a> 
+            <a href="#"  class="info">Term and Condition</a> 
+            <a href="about.html"  class="info">About us</a> 
+        </div>
+        <hr/>
+        <div class="social_media">
+            <a href="#" class="info">Facebook</a> 
+            <a href="#" class="info">Twitter</a> 
+            <a href="#" class="info">Instagram</a> 
+            <a href="#" class="info">Youtube</a> 
+            <a href="#" class="info">Tiktok</a>
+        </div>
+        <div class="copy">
+           &copy copyright <a href=""> GameZone</a> well reserved 
+        </div>
+    </footer>
+    
+    <script >
+        let menu=document.getElementById("menu");
+        menu.style.maxHeight = "0px";
+        
+        function showMenu(){
+            if(menu.style.maxHeight == "0px"){
+                menu.style.maxHeight = "300px";
+            }else{                
+                menu.style.maxHeight = "0px";;
+           } 
+                }
+        
+    </script>
+    <style>
+   form {
+       width:300px ;
+       padding: 30px;
+       margin: 20vh auto 20vh auto;
+       background: white;
+       border-radius: 8px;
+       color: black;
+       text-align: center;
+       font-size: 1.1rem;
+       
+   }
+   
+   form h2{
+       margin: 15px 0;
+   }
+   form .btn{
+       
+       padding: 15px 80px;
+       background: #00ffc3;
+       border: 1px solid transparent;
+       color: white;
+       border-radius: 5px;
+       font-size: 17px;
+       margin: 10px 0;
+       opacity: 1;
+       transition: 0.5s ease;
+       
+       
+   }
+   form .btn:hover{
+       border: 1px solid #00ffc3;
+       background: transparent;
+       color: #00ffc3;
+       
+   }
+ form  .input{
+       display: flex;
+       flex-direction: column;
+      
+       text-align: left;
+       
+   }
+   form .input input{
+       width: 100%;
+       padding: 20px;
+       margin: 10px 0;
+       background: white;
+       border: 1px solid #eee;
+       border-radius: 6px;
+       display: block;
+       outline: none;
+       
+   }
+   form .input input:focus{
+       border: 3px solid #00ffc3;
+       
+   }
+    </style>
+</body>
+</html>

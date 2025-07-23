@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    
+    <nav>
+        <div class="logo"id="top">
+            <h2>Gamezone</h2>
+        </div>
+        
+                <ul id="menu">
+            <li><a href="nav.html">Home</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="download.html">Download</a></li>
+                <!-- <li><a href="#">Ratings</a></li> -->
+                <li><a href="update.html">Update</a></li>
+                <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="menu" id="" onclick"showMenu()">
+            <!-- <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span> -->
+           
+            <img src="images/menu.png" class="img"alt="" onclick="showMenu()">
+            </div>
+    </nav>
+    
+    
+    <section>
+    <div class="news">
+        
+    
+   <h2>Latest Game News & Updates</h2> 
+
+
+
+<p>Stay ahead of the game. Check out the latest news, patches, DLC releases, and game announcements.
+</p> 
+
+
+<h2>New Update</h2>
+<div class="update">
+    [May 2025] – GTA VI Gets New Expansion Pack!
+Rockstar has announced the “Crimson Heist” DLC – new missions, weapons, and a massive heist system overhaul.
+</div>
+
+<div class="update">
+    
+[May 2025] – Elden Ring II Teaser Drops
+FromSoftware drops a 30-second teaser confirming Elden Ring II. Fans go wild.
+
+</div>
+
+<div class="update">
+    
+[June 2025] – CyberShock 2.0 Patch Fixes Major Glitches
+The patch improves stability, adds new enemies, and fixes mission-breaking bugs on console.
+
+    
+</div>
+    </div>
+    
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+         <!-- <a href="nav.html"><button class="top" id="#menu"> 
+        back
+    </button></a> -->
+    <footer>
+        <div class="legal">
+            <a href="#" class="info">Legal </a> 
+            <a href="contact.html"  class="info">Contact</a> 
+            <a href="#"  class="info">Community</a> 
+            <a href="#"  class="info">Term and Condition</a> 
+            <a href="about.html"  class="info">About us</a> 
+        </div>
+        <hr/>
+        <div class="social_media">
+            <a href="#" class="info">Facebook</a> 
+            <a href="#" class="info">Twitter</a> 
+            <a href="#" class="info">Instagram</a> 
+            <a href="#" class="info">Youtube</a> 
+            <a href="#" class="info">Tiktok</a>
+        </div>
+        <div class="copy">
+           &copy copyright <a href=""> GameZone</a> well reserved 
+        </div>
+    </footer>
+    
+    <script >
+        let menu=document.getElementById("menu");
+        menu.style.maxHeight = "0px";
+        
+        function showMenu(){
+            if(menu.style.maxHeight == "0px"){
+                menu.style.maxHeight = "300px";
+            }else{                
+                menu.style.maxHeight = "0px";;
+           } 
+                }
+        
+    </script>
+    <style>
+     .news{
+            background: white;
+            padding: 10px 12px;
+            font-size: 15px;
+            color: black;
+            overflow: auto;
+            margin-bottom: 30px;
+            
+        }
+        .news p{
+            text-align:center;
+        }
+        .news h2{
+            margin :15px 20px;
+        }
+        .update{
+            border-left:4px solid #00ffc3;
+            background: #d4d4d48e;
+            margin-bottom:20px;
+            padding: 10px 12px;
+            color :#337430;
+            font-weight:600;
+        }
+        
+    </style>
+</body>
+</html>

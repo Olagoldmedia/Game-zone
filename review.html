@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"id="top">
+            <h2>Gamezone</h2>
+        </div>
+        
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="download.html">Download</a></li>
+                <!-- <li><a href="#">Ratings</a></li> -->
+                <li><a href="update.html">Update</a></li>
+                <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="menu" id="" onclick"showMenu()">
+            <!-- <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span> -->
+           
+            <img src="images/menu.png" class="img"alt="" onclick="showMenu()">
+            </div>
+    </nav>
+    
+    
+    <section>
+        
+    <h2>Game Reviews</h2>
+
+
+
+<h3>Explore in-depth, unbiased reviews from our expert team and community. We rate games based on gameplay, graphics, story, performance, and fun factor.</h3>
+
+
+<div class="card">
+    <img src="images/game3.jpeg" width="100px" height="100px" alt="">
+    <p>
+        <span>Game Title:</span> Call of Honor: Rebirth
+    </p>
+    <p>
+        <span>Rating:</span> ★★★★☆ (4.5/5)
+    </p>
+    <p>
+        <span>Genre:</span> FPS, Action
+    </p>
+
+    <p class="call">
+        <span>Review:</span>Call of Honor: Rebirth delivers heart-pounding action and cinematic storytelling. The visuals are next-gen, and the multiplayer is tighter than ever. Minor bugs on PC, but nothing game-breaking.
+        
+    </p>
+</div>
+
+
+
+<div class="card">
+    <img src="images/game2.jpeg" width="100px" height="100px" alt="">
+    <p>
+        <span>Game Title:</span> Kingdom Aweken
+    </p>
+    <p>
+        <span>Rating:</span> ★★★☆☆ (3/5)
+    </p>
+    <p>
+        <span>Genre:</span> RPG
+    </p>
+
+    <p class="call">
+        <span>Review:</span>While Kingdoms Awaken has a rich lore and deep mechanics, its pacing can feel sluggish. Ideal for hardcore strategy lovers.
+
+        
+    </p>
+</div>
+
+
+
+
+    </section>
+    
+    
+    
+    
+     <footer>
+        <div class="legal">
+            <a href="#" class="info">Legal </a> 
+            <a href="#"  class="info">Contact</a> 
+            <a href="#"  class="info">Community</a> 
+            <a href="#"  class="info">Term and Condition</a> 
+            <a href="#"  class="info">About us</a> 
+        </div>
+        <hr/>
+        <div class="social_media">
+            <a href="#" class="info">Facebook</a> 
+            <a href="#" class="info">Twitter</a> 
+            <a href="#" class="info">Instagram</a> 
+            <a href="#" class="info">Youtube</a> 
+            <a href="#" class="info">Tiktok</a>
+        </div>
+        <div class="copy">
+           &copy copyright <a href=""> GameZone</a> well reserved 
+        </div>
+    </footer>
+    
+    <script >
+        let menu=document.getElementById("menu");
+        menu.style.maxHeight = "0px";
+        
+        function showMenu(){
+            if(menu.style.maxHeight == "0px"){
+                menu.style.maxHeight = "300px";
+            }else{                
+                menu.style.maxHeight = "0px";;
+           } 
+                }
+        
+    </script>
+    <style>
+        .card{
+            padding:20px 5px;
+            background: #20c2a29b;
+            overflow:auto;
+            margin: 30px 10px;
+        }
+        .card img{
+            float:left;
+            padding:2px;
+        }
+        .card span{
+            font-weight:600;
+            font-size:18px;
+            margin:9px 3px;
+        }
+        .card p{
+            margin:8px 10px;
+        }
+        .card .call{
+            text-align:left;
+            margin-bottom:8px;
+        }
+        section h3{
+            font-size:15px;
+            text-align:center;
+        }
+        h2{
+            margin-left:30px;
+        }
+        section{
+            width:100vw;
+            
+        }
+    </style>
+</body>
+</html>
